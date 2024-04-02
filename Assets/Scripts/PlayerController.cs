@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    float h = 0;
+    private float h = 0;
     Rigidbody2D rb;
     public float speed;
 
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
         h = Input.GetAxisRaw("Horizontal");
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         rb.velocity = new Vector2(h * speed, 0);
     }
