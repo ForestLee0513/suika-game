@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6472141195662856597}
   - component: {fileID: 1170163913644622605}
   - component: {fileID: -4265624545264858422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tangerine
   m_TagString: Fruit
   m_Icon: {fileID: 0}
