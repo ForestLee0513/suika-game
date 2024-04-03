@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SafeArea : MonoBehaviour
@@ -8,7 +9,8 @@ public class SafeArea : MonoBehaviour
     {
         if (collision.gameObject.tag == "Fruit")
         {
-            Debug.Log("GameOver!");
+            Debug.Log(collision.gameObject.IsDestroyed());
+            Debug.Log(transform.parent.transform.localScale.y);
         }
     }
 }

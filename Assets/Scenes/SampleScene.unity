@@ -690,7 +690,7 @@ GameObject:
   - component: {fileID: 1410710122}
   - component: {fileID: 1410710123}
   m_Layer: 3
-  m_Name: DangerZone
+  m_Name: WarningZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -753,7 +753,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.7362267, b: 0.7122642, a: 0.24705882}
+  m_Color: {r: 1, g: 0.9987765, b: 0.7137255, a: 0.24705882}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -820,6 +820,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b32e992c5d25054fbe8120c64ffb6af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  durationTime: 0
+  gameOverTriggerTime: 2
 --- !u!1 &1662254664
 GameObject:
   m_ObjectHideFlags: 0

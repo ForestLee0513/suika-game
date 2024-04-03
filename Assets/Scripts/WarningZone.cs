@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DangerZone : MonoBehaviour
+public class WarningZone : MonoBehaviour
 {
     [SerializeField]
     private float durationTime = 0;
