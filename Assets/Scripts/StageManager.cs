@@ -9,6 +9,7 @@ public class StageManager : MonoBehaviour
     private int score;
     [SerializeField]
     private int randomRange = 0;
+    public bool isGameOver = false;
     
     private static StageManager instance;
     public static StageManager Instance
@@ -49,10 +50,17 @@ public class StageManager : MonoBehaviour
     public void AddScore(int scoreFromFruit)
     {
         score += scoreFromFruit;
+        Debug.Log(score);
 
         if (scoreText != null)
         {
             scoreText.text = score.ToString();
         }
+    }
+
+    public void ToggleGameOver()
+    {
+        Debug.Log("게임오버요..");
+        isGameOver = !isGameOver;
     }
 }

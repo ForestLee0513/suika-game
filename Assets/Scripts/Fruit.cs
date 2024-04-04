@@ -20,6 +20,7 @@ public class Fruits : MonoBehaviour
                     GameObject nextFruit = FruitPrefabManager.Instance.GetNextGenerateFruit(level);
                     if (nextFruit != null)
                     {
+                        StageManager.Instance.AddScore(score);
                         Instantiate(nextFruit, transform.position, Quaternion.identity);
                     }
                     else
