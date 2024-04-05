@@ -11,12 +11,12 @@ public class Fruit : MonoBehaviour
     public bool isMerge;
 
     Rigidbody2D rb;
-    CircleCollider2D circleCollider;
+    Collider2D circleCollider;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        circleCollider = GetComponent<CircleCollider2D>();
+        circleCollider = GetComponent<Collider2D>();
     }
 
     void OnCollisionEnter2D(Collision2D collision)

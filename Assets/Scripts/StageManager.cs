@@ -32,19 +32,19 @@ public class StageManager : MonoBehaviour
 
     void Start()
     {
-        ChangeNextFruit();
+        ChangeNextFruitIndex();
     }
 
-    public void ChangeNextFruit()
+    public void ChangeNextFruitIndex()
     {
         int totalFruits = FruitPrefabManager.Instance.fruitPrefabs.Length;
-        // 0에서 총 과일의 절반 수에서 다음 과일을 무작위 선택
+        // 0에서 총 과일의 절반 수 사이의 다음 과일을 무작위 선택
         randomRange = Random.Range(0, totalFruits / 2);
     }
 
-    public int GetNextFruit()
+    public GameObject GetNextFruit()
     {
-        return randomRange;
+        return FruitPrefabManager.Instance.fruitPrefabs[randomRange];
     }
 
     public void AddScore(int scoreFromFruit)

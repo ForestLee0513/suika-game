@@ -16,10 +16,12 @@ public class FruitTrigger : MonoBehaviour
 
     IEnumerator DropFruit()
     {
-        StageManager.Instance.ChangeNextFruit();
-        int nextFruitIndex = StageManager.Instance.GetNextFruit();
-        GameObject nextFruit = FruitPrefabManager.Instance.fruitPrefabs[nextFruitIndex];
+        GameObject nextFruit = StageManager.Instance.GetNextFruit();
         Instantiate(nextFruit, transform.position, Quaternion.identity);
+
+        StageManager.Instance.ChangeNextFruitIndex();
+        GameObject changedNextFruit = StageManager.Instance.GetNextFruit();
+        transform.parent.GetComponentInChildren<NextFruitSpriteChanger>().SwapSprite(changedNextFruit);
 
         isDropped = true;
         yield return new WaitForSeconds(cooltime);
