@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0950f8e5d1a52e42a376dd73bed3d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  basket: {fileID: 0}
   speed: 4
 --- !u!1 &2996239034737143736
 GameObject:
@@ -292,6 +293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1775543388166739647}
   - component: {fileID: 5092955471356474792}
+  - component: {fileID: 7114886813604677954}
   m_Layer: 0
   m_Name: NextFruit
   m_TagString: Untagged
@@ -366,6 +368,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7114886813604677954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875027231391958165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e429942297b02440a4e37513b77014f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8704178870282487832
 GameObject:
   m_ObjectHideFlags: 0

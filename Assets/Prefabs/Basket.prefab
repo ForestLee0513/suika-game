@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 3609478605059749940}
   - component: {fileID: 408140529240105162}
   - component: {fileID: 1610134415744808607}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: WarningZone
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}

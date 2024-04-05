@@ -40,7 +40,6 @@ public class Fruit : MonoBehaviour
 
     public void Hide(Vector3 targetPos)
     {
-        Debug.Log("collide other");
         isMerge = true;
         rb.simulated = false;
         circleCollider.enabled = false;
@@ -71,6 +70,8 @@ public class Fruit : MonoBehaviour
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0;
         
+        // increase score here.
+
         Destroy(gameObject);
         if(level + 1 < FruitPrefabManager.Instance.fruitPrefabs.Length)
         {
