@@ -20,8 +20,6 @@ public class StageManager : MonoBehaviour
         }
     }
 
-    public TextMeshProUGUI scoreText;
-
     void Awake()
     {
         if (instance == null)
@@ -50,12 +48,7 @@ public class StageManager : MonoBehaviour
     public void AddScore(int scoreFromFruit)
     {
         score += scoreFromFruit;
-        Debug.Log(score);
-
-        if (scoreText != null)
-        {
-            scoreText.text = score.ToString();
-        }
+        UIManager.Instance.UpdateGameScore(score);
     }
 
     public void ToggleGameOver()

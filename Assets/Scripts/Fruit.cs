@@ -69,9 +69,8 @@ public class Fruit : MonoBehaviour
 
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0;
-        
-        // increase score here.
 
+        StageManager.Instance.AddScore(score);
         Destroy(gameObject);
         if(level + 1 < FruitPrefabManager.Instance.fruitPrefabs.Length)
         {
