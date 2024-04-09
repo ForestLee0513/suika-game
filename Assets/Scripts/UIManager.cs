@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -30,6 +31,10 @@ public class UIManager : MonoBehaviour
             UIGameObject = GameObject.Find("UI");
         }
     }
+
+    #region Title
+
+    #endregion
 
     #region in Game
     public void UpdateGameScore(int score)
