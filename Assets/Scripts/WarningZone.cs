@@ -13,7 +13,7 @@ public class WarningZone : MonoBehaviour
         {
             isTimerStart = true;
             Debug.Log("타이머 시작!");
-            Invoke("ToggleGameOverInvoke", gameOverTriggerTime);
+            Invoke("ToggleGameOverStateInvoke", gameOverTriggerTime);
         }
     }
 
@@ -22,20 +22,20 @@ public class WarningZone : MonoBehaviour
         if (collision.tag == "Fruit" && StageManager.Instance.isGameOver == false)
         {
             isTimerStart = false;
-            CancelInvoke("ToggleGameOverInvoke");
+            CancelInvoke("ToggleGameOverStateInvoke");
 
             float lastCollisionPosition = collision.transform.position.y;
             float warningZonePosition = transform.position.y;
 
             if(lastCollisionPosition > warningZonePosition)
             {
-                StageManager.Instance.ToggleGameOver();
+                StageManager.Instance.ToggleGameOverState();
             }
         }
     }
 
-    void ToggleGameOverInvoke()
+    void ToggleGameOverStateInvoke()
     {
-        StageManager.Instance.ToggleGameOver();
+        StageManager.Instance.ToggleGameOverState();
     }
 }

@@ -51,9 +51,9 @@ public class StageManager : MonoBehaviour
         UIManager.Instance.UpdateGameScore(score);
     }
 
-    public void ToggleGameOver()
+    public void ToggleGameOverState()
     {
-        Debug.Log("게임오버요..");
         isGameOver = !isGameOver;
+        UIManager.Instance.ToggleGameOver();
     }
 }

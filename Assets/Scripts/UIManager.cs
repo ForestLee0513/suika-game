@@ -25,12 +25,6 @@ public class UIManager : MonoBehaviour
             instance = this;
         }
 
-        DontDestroyOnLoad(gameObject);
-    }
-
-    void Start()
-    {
-        // UI 매니저 탐색 후 UIGameObject의 필드 값으로 적용.
         if (GameObject.Find("UI").gameObject != null)
         {
             UIGameObject = GameObject.Find("UI");
@@ -41,7 +35,6 @@ public class UIManager : MonoBehaviour
     public void UpdateGameScore(int score)
     {
         GameObject scoreTextGameObject = UIGameObject.transform.Find("Score/ScoreNumber").gameObject;
-
         if(scoreTextGameObject != null)
         {
             TextMeshProUGUI scoreText = scoreTextGameObject.GetComponent<TextMeshProUGUI>();
@@ -51,6 +44,12 @@ public class UIManager : MonoBehaviour
                 scoreText.text = score.ToString();
             }
         }
+    }
+
+    public void ToggleGameOver()
+    {
+        GameObject gameOverScreen = UIGameObject.transform.Find("GameOver").gameObject;
+        gameOverScreen.SetActive(!gameOverScreen.activeSelf);
     }
     #endregion
 }
