@@ -32,15 +32,13 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    #region Title
+    // dialog 관련 구현 예정
 
-    #endregion
-
-    #region in Game
+    #region inGame
     public void UpdateGameScore(int score)
     {
         GameObject scoreTextGameObject = UIGameObject.transform.Find("Score/ScoreNumber").gameObject;
-        if(scoreTextGameObject != null)
+        if (scoreTextGameObject != null)
         {
             TextMeshProUGUI scoreText = scoreTextGameObject.GetComponent<TextMeshProUGUI>();
 
