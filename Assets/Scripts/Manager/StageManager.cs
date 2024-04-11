@@ -48,12 +48,12 @@ public class StageManager : MonoBehaviour
     public void AddScore(int scoreFromFruit)
     {
         score += scoreFromFruit;
-        UIManager.Instance.UpdateGameScore(score);
+        InGameUIManager.Instance.UpdateGameScore(score);
     }
 
     public void ToggleGameOverState()
     {
         isGameOver = !isGameOver;
-        UIManager.Instance.ToggleGameOver();
+        InGameUIManager.Instance.ToggleGameOver();
     }
 }
