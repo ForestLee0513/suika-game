@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6416206443799027905}
   - component: {fileID: 6286435889245363019}
   - component: {fileID: 7129276417322582843}
-  - component: {fileID: -99871192756356321}
   - component: {fileID: 4587170729463091724}
+  - component: {fileID: 5868779213997429031}
   m_Layer: 6
   m_Name: Pineapple
   m_TagString: Fruit
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 1446771366, guid: dedcfc0211a9b114d8e680d90851f675, type: 3}
   m_Color: {r: 1, g: 0.9176218, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -114,8 +114,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &-99871192756356321
-CircleCollider2D:
+--- !u!114 &4587170729463091724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521881363272556240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1474d6c2f7a152340ac54cb9e3ab2d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 5
+  score: 55
+  isMerge: 0
+--- !u!70 &5868779213997429031
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -146,21 +161,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &4587170729463091724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521881363272556240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1474d6c2f7a152340ac54cb9e3ab2d60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 5
-  score: 55
-  isMerge: 0
+  m_Offset: {x: 0.0041544437, y: 0.024436116}
+  m_Size: {x: 0.64266634, y: 0.9622085}
+  m_Direction: 0

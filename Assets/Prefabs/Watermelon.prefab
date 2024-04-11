@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1999981448020989094}
   - component: {fileID: 7437762581175287074}
   - component: {fileID: -1403784926263199104}
-  - component: {fileID: 1158699136026367343}
   - component: {fileID: -5095202420256874960}
+  - component: {fileID: 6160698113658329045}
   m_Layer: 6
   m_Name: Watermelon
   m_TagString: Fruit
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -1367466781, guid: dedcfc0211a9b114d8e680d90851f675, type: 3}
   m_Color: {r: 0, g: 1, b: 0.05324912, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -114,8 +114,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &1158699136026367343
-CircleCollider2D:
+--- !u!114 &-5095202420256874960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4863425570205390868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1474d6c2f7a152340ac54cb9e3ab2d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 7
+  score: 100
+  isMerge: 0
+--- !u!70 &6160698113658329045
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -146,21 +161,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &-5095202420256874960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4863425570205390868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1474d6c2f7a152340ac54cb9e3ab2d60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 7
-  score: 100
-  isMerge: 0
+  m_Offset: {x: -0.0109774275, y: 0.00823355}
+  m_Size: {x: 1.0000007, y: 0.8737627}
+  m_Direction: 1
