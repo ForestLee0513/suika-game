@@ -42,3 +42,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1033922165
+    locked: 0
+  - name: Player
+    uniqueID: 506065611
+    locked: 0
+  - name: PlayArea
+    uniqueID: 419857507
+    locked: 0
+  - name: Fruits
+    uniqueID: 3042060793
+    locked: 0
