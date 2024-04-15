@@ -50,6 +50,7 @@ public class StageManager : MonoBehaviour
             newHighScoreData.name = "Player1";
             newHighScoreData.score = 0;
             SaveHighScoreToJson(newHighScoreData);
+            highScoreData = newHighScoreData;
         }
         else
         {
@@ -90,7 +91,7 @@ public class StageManager : MonoBehaviour
         if(isGameOver == true)
         {
             // 최고기록일 때 기록 저장
-            if (score > highScoreData.score)
+            if (score >= highScoreData.score)
             {
                 highScoreData.score = score;
                 SaveHighScoreToJson(highScoreData);
