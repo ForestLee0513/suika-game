@@ -8,9 +8,9 @@ public class FruitTrigger : MonoBehaviour
     bool isDropped = false;
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && isDropped == false && !StageManager.Instance.isGameOver)
+        if (Input.GetKeyDown(KeyCode.Space) && isDropped == false && !StageManager.Instance.isGameOver && StageManager.Instance.activePlayer == true)
         {
-            StartCoroutine("DropFruit");
+            StartCoroutine(nameof(DropFruit));
         }
     }
 

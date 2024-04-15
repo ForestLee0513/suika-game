@@ -28,7 +28,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         h = Input.GetAxisRaw("Horizontal");
-        if ((h > 0 && transform.position.x >= rightBaksetBorder) || (h < 0 && transform.position.x <= leftBaksetBorder) || StageManager.Instance.isGameOver)
+        if ((h > 0 && transform.position.x >= rightBaksetBorder) || 
+            (h < 0 && transform.position.x <= leftBaksetBorder) || 
+            StageManager.Instance.isGameOver ||
+            StageManager.Instance.activePlayer == false)
         {
             return;
         }
